@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>VIBE RUNNER — LAUNCH. RUN. VIBE.</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+
+    <div id="hud" class="hidden">
+      <div id="hud-score">SCORE: 000000</div>
+    </div>
+
+    <div id="start-screen" class="screen">
+      <h1 class="title">VIBE RUNNER</h1>
+      <p class="subtitle">LAUNCH. RUN. VIBE.</p>
+      <p class="desc">How long can you survive Vibe City?</p>
+      <button id="play-btn" class="btn-primary">▶ PLAY</button>
+      <p class="hint">SPACE / ↑ to jump on desktop &nbsp;·&nbsp; TAP to jump on mobile</p>
+      <p class="credit">A community-made game for @vibevibefun</p>
+    </div>
+
+    <div id="gameover-screen" class="screen hidden">
+      <h2 class="title-sm">VIBE RUN ENDED</h2>
+      <div class="stat-row"><span>SCORE</span><span id="final-score">000000</span></div>
+      <button id="restart-btn" class="btn-primary">RUN AGAIN</button>
+      <p class="credit">A community-made game for @vibevibefun</p>
+    </div>
+  </div>
+
+  <script type="module" src="src/game.js"></script>
+</body>
+</html>
